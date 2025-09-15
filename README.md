@@ -1,74 +1,60 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# 🤖 AI Exercise Generator  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a **web application for teachers** to automatically **generate exercises using AI** and manage them in a central dashboard.  
+It allows teachers to **filter exercises by subject, delete them, and build exams** from generated exercises.  
 
-## Available Scripts
+The app is built with **React**, uses **Supabase** for database storage, and integrates with the **Cohere AI API** (can be adapted to OpenAI or other providers).  
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔹 **Generate Exercises with AI**  
+  Teachers can enter a subject (e.g., *Maths, History, Science*) and instantly generate 3 detailed exercises with statements and corrections.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔹 **Save to Database**  
+  Generated exercises are automatically saved to **Supabase** for later use.  
 
-### `npm test`
+- 🔹 **Browse All Exercises**  
+  View all exercises stored in the system, sorted by date.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔹 **Filter by Category**  
+  Filter exercises by subject for quick access.  
 
-### `npm run build`
+- 🔹 **Manage Exercises**  
+  Delete unnecessary exercises.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🔹 **Exam Creation Ready**  
+  Teachers can reuse the stored exercises to prepare exams.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Technologies Used  
 
-### `npm run eject`
+**Frontend:**  
+- React  
+- React Router  
+- Material-UI (MUI)  
+- Axios  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Backend / Database:**  
+- Supabase  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**AI Integration:**  
+- Cohere AI Generate API (or OpenAI GPT as alternative)  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Other Tools / Libraries:**  
+- JavaScript (ES6+)  
+- Node.js (for project setup)  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# ai-exercise-generator
->>>>>>> d200d9ddc988857af56d81dbab82bec8fa8af7c1
+## 📂 Project Structure  
+```
+/src
+├── components
+│ ├── AllExercice.jsx # List + filter all saved exercises
+│ ├── Generate.jsx # Generate exercises using AI
+├── App.js # Routes setup
+├── index.js # Entry point
+```
